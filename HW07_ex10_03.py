@@ -6,3 +6,14 @@
 # In your final submission: 
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def preceding_sum(item,list_):
+	return sum(list_[0:list_.index(item)+1])
+
+def cumulative_sum(list_):
+		return [preceding_sum(item,list_) for item in list_]
+
+def main():
+	pass
+	#print cumulative_sum([5,7,9])
+main()    
